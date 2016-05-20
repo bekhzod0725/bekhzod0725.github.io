@@ -22,6 +22,11 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+//$link-box-color:   $grey-color-light;
+//$link-box-text-color: #752;
+$link-box-color:   #9edead;//#d4af37;
+$link-box-text-color: $text-color;
+
 // Width of the content area
 $content-width:    800px;
 

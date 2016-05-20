@@ -204,3 +204,24 @@ pre {
         }
     }
 }
+
+
+/**
+ * My classes
+ */
+.link-box-row {
+    background-color: $background-color;
+}
+.link-box {
+    padding: 60px;
+    color: $text-color;
+    &:hover {
+        color: $link-box-text-color;
+        background-color: $link-box-color;
+        text-decoration: none;
+    }
+}
+.index-post-title {
+    color: $text-color;
+    margin-bottom: 10px;
+}

@@ -5,21 +5,24 @@ layout: default
 <div class="home">
 
 <!--  <h1 class="page-heading">Posts</h1>-->
-
-  <ul class="post-list">
+<div class="row link-box-row">
     {% for post in site.posts %}
-      <li class="row">
-      <div class="col-md-8">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </div>
-      <div class="col-md-4">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
-      <hr>
-      </li>
-    {% endfor %}
-  </ul>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+          <div class="col-md-6 link-box" style="text-align: justify">
+              <div class="row">
+                  <h4>
+                      <span class="col-xs-8 index-post-title">{{ post.title }}</span>
+                      <span class="post-meta col-xs-4 post-date" align="right">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <h6 class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></h6>
+                  </h4>
+                  <span class="col-xs-12">{{ post.excerpt  }}</span>
+              </div>
+          </div>
+      </a>
+    {% endfor %}
+    </div>
+<div class="row" style="margin-top: 20px">
+  <h6 class="rss-subscribe col-xs-4">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></h6>
+</div>
 
 </div>
