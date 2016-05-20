@@ -11,20 +11,18 @@ layout: default
           <div class="link-box-body">
               {% if post.image %}
               <div class="row" >
-                  <div class="col-xs-12">
-                <img src="/assets/{{ post.image }}" title="{{ post.title }}" />
-                <div class="link-box-image-caption-bg"></div>
-                <div class="carousel-caption" >
-                    <div><h1>{{post.title}}<h1></div>
+                  <div class="col-md-12">
+                    <img src="/assets/{{ post.image }}" title="{{ post.title }}" />
+                    <div class="link-box-image-caption-bg"></div>
+                    <div class="carousel-caption" ><h1>{{post.title}}<h1></div>
                 </div>
-            </div>
-            </div>
-
+              </div>
               {% else %}
-                  <h4>
-                      <span class="index-post-title">{{ post.title }}</span>
-                      <span class="post-meta post-date" align="right">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+                  <h4 class="row">
+                      <span class="index-post-title col-md-7">{{ post.title }}</span>
+                      <span class="post-meta post-date col-md-5" align="right">
+                          {{ post.date | date: "%b %-d, %Y" }}
+                      </span>
                   </h4>
                   <span>{{ post.excerpt  }}</span>
               {% endif %}
@@ -33,7 +31,9 @@ layout: default
     {% endfor %}
 </div>
 <div class="row" style="margin-top: 20px">
-  <h6 class="rss-subscribe col-xs-4">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></h6>
+  <h6 class="rss-subscribe col-xs-4">
+      subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+  </h6>
 </div>
 
 </div>
