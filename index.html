@@ -5,22 +5,33 @@ layout: default
 <div class="home">
 
 <!--  <h1 class="page-heading">Posts</h1>-->
-<div class="row link-box-row">
+<div class="link-box-row">
     {% for post in site.posts %}
-      <a href="{{ post.url | prepend: site.baseurl }}">
-          <div class="col-md-6 link-box" style="text-align: justify">
-              <div class="row">
+      <a class="text-justify link-box" href="{{ post.url | prepend: site.baseurl }}">
+          <div class="link-box-body">
+              {% if post.image %}
+              <div class="row" >
+                  <div class="col-xs-12">
+                <img src="/assets/{{ post.image }}" title="{{ post.title }}" />
+                <div class="link-box-image-caption-bg"></div>
+                <div class="carousel-caption" >
+                    <div><h1>{{post.title}}<h1></div>
+                </div>
+            </div>
+            </div>
+
+              {% else %}
                   <h4>
-                      <span class="col-xs-8 index-post-title">{{ post.title }}</span>
-                      <span class="post-meta col-xs-4 post-date" align="right">{{ post.date | date: "%b %-d, %Y" }}</span>
+                      <span class="index-post-title">{{ post.title }}</span>
+                      <span class="post-meta post-date" align="right">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                   </h4>
-                  <span class="col-xs-12">{{ post.excerpt  }}</span>
-              </div>
+                  <span>{{ post.excerpt  }}</span>
+              {% endif %}
           </div>
       </a>
     {% endfor %}
-    </div>
+</div>
 <div class="row" style="margin-top: 20px">
   <h6 class="rss-subscribe col-xs-4">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></h6>
 </div>
