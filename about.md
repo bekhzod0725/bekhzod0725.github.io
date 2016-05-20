@@ -4,6 +4,20 @@ title: About
 permalink: /about/
 ---
 
-My name is Bekhzod Umarov. I am a CS student.
+![me]({{ site.url }}/assets/me.jpg)
 
-Please feel free to visit my {% include icon-github.html username="bekhzod0725" %} or {% include icon-linkedin.html publicname="bekumarov" %}
+Hello. My name is Bekhzod Umarov. I'm an Uzbek CS student with a passion for photography and technology, currently living in New Haven. 
+
+I am currently working on a new Academic Management System for Tutoring/Learning Centers.
+
+## Rsearch
+- [Bank Password Policies](http://www.unhcfreg.com/#!PasWoRd-eSaMe-Pa-Gaining-access-to-your-bank-account-with-multiple-passwords-impacts-350-million-customers/c5rt/56d5ce580cf2cacdc4211df9)
+- [Facial Recognition with Deep Learning](https://www.sharelatex.com/project/5727ca0891581fc01364ed6c/build/154cbe35306-52d78b7e76ed827d/output/output.pdf?compileGroup=standard)
+
+## Elsewhere
+
+Random places where you can find me:
+- {% include icon-github.html username="bekhzod0725" %}
+- {% include icon-linkedin.html publicname="bekumarov" %}
+- [Instagram](http://instagram.com/bekhzod0725)
+
