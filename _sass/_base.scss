@@ -261,7 +261,9 @@ div.link-box-row:hover .link-box:not(:hover) {
     color: $text-color;
     margin-bottom: 10px;
 }
-
+.index-post-excerpt {
+    color: $text-color;
+}
 @media only screen and (max-width: 720px)
 {
     .link-box-row {
