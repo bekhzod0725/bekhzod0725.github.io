@@ -18,15 +18,13 @@ layout: default
                 </div>
               </div>
               {% else %}
-		<div class="row" style="padding: 15px;">
                   <h4 class="row">
-                      <span class="index-post-title col-md-7" align="left">{{ post.title }}</span>
+                      <span class="index-post-title col-md-8" align="left">{{ post.title }}</span>
                       <span class="post-meta post-date col-md-5" align="right">
                           {{ post.date | date: "%b %-d, %Y" }}
                       </span>
                   </h4>
                   <span class="index-post-excerpt">{{ post.excerpt  }}</span>
-		</div>
               {% endif %}
           </div>
       </a>
