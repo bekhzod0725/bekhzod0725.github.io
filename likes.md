@@ -5,6 +5,6 @@ permalink: /likes/
 ---
 
 ##  Blogs Worth Reading
-- [RSMS](http://rsms.com){:target="_blank"}
+- [RSMS](http://rsms.me){:target="_blank"}
 - [KevinLondon](http://kevinlondon.com){:target="_blank"}
 
