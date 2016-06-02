@@ -24,13 +24,13 @@ After the installation, I set up my database and users, and tested all the conne
 ### MSQQL TCP/IP Connection
 SQLEXPRESS doesn't allow network connections by default. Therefore, now that our database is setup, we have to allow ourselves to connect to the mssql server over the network.
 
-- Start *SQL Server Configuration Manager*
-- Go to *SQL Server Network Configuration > Protocols for* <instance_name> *> TCP/IP > Properties*
-- In *Protocol tab* change *Enable* to *Yes*
-- Go to *IP Address* tab; in *IPAll* (last) section clear *TCP Dynamic Ports* and set *TCP Port* to *1433* (or any other port you want to use)
-- Hit *OK* (2x)
-- Go to *SQL Server Services* under SQL Server Configuration Manager (on the left side)
-- Right click *SQL Server (<instance name>)* and *Restart*
+- Start **SQL Server Configuration Manager**
+- Go to **SQL Server Network Configuration > Protocols for *<instance_name>* > TCP/IP > Properties**
+- In **Protocol** tab change **Enable** to **Yes**
+- Go to **IP Address** tab; in **IPAll** (last) section clear **TCP Dynamic Ports** and set **TCP Port** to **1433** (or any other port you want to use)
+- Hit **OK** (2x)
+- Go to **SQL Server Services** under SQL Server Configuration Manager (on the left side)
+- Right click **SQL Server (<instance name>)** and **Restart**
 
 Now SQL server is allowed to accept network connections over the port number 1433. However, your machine is not.
 
@@ -68,7 +68,7 @@ Setting up django is even easier.
     > git clone https://github.com/aaugustin/django-pymssql
     > cd django-pymssql && python3.4 setup.py install && cd ..
 
-Go to your project and edit *settings.py* file
+Go to your project and edit **settings.py** file
     
     DATABASES = {
         'default': {
