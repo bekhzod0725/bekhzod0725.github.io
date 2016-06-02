@@ -3,7 +3,6 @@ layout: post
 title: django + Microsoft SQL Server
 date:  2016-06-02 13:17:35
 comments: true
-published: false
 categories: django pymssql mssql sql server microsoft python3.4 python3 python
 ---
 ## Backstory
