@@ -40,6 +40,12 @@ Open up your Firewall's advanced settings. Under Inbound Rules add a New Rule se
 ### Test
 Now you can test your connection from any computer in your network.
 
+    > tsql -H your.ip.add.ress -p 1433 -U username -P password
+
+
+Or
+
+
     import pymssql
     server = "YOUR-IP-ADDRESS" # i.e. "10.0.2.15"
     username = "databaseUsr"
@@ -53,11 +59,6 @@ Now you can test your connection from any computer in your network.
     for each in data:
         print("name: %s" % (data[0],))
     conn.close()
-
-
-Or
-    > tsql -H your.ip.add.ress -p 1433 -U username -P password
-
 
 ## Django
 Setting up django is even easier.
