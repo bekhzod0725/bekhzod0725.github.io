@@ -14,7 +14,7 @@ You have no idea what's going on and you can't even call home because no one's t
 
 Finally, you get to your house and realize that when your 3 years old daughter was playing with a ball she accidentally hit the server, because you were dumb enough to leave the server in an open area. So your server is dead now. 
 
-This is exactly what happened to me yesterday. Lucky me, my server still seems salvageable. However, because of my other more important projects I don't have time for restoring it right now. The only thing that I needed from it was my postgres database. Instead of restoring the machine just to get back my database, I decided to go with VirtualBox. Main reason for going this route is that I want to be sure that my Academic Management System is going to work with any database engine (not just postgres) and I chose Microsoft SQL Server. Thanks for the accident, Kumush!
+This is exactly what happened to me yesterday. Lucky me, my server still seems salvageable. However, because of my other more important projects I don't have time for restoring it right now. The only thing that I needed from it was my postgres database. Instead of restoring the machine just to get back my database, I decided to go with VirtualBox. Main reason for going this route is that I want to be sure that my Academic Management System is going to work with any database engine (not just postgres) and I chose Microsoft SQL Server. Thanks for the accident, [Kumush](https://www.instagram.com/p/3Vxr2PjeD0/?taken-by=theimpaler0725){:target="_blank"}!
 
 ## MSSQL Setup
 I didn't want to have the whole professional environment working on my VirtualBox so I just went ahead with SQLEXPRESS version of MSSQL. The setup process was smooth and easy.
@@ -25,12 +25,12 @@ After the installation, I set up my database and users, and tested all the conne
 SQLEXPRESS doesn't allow network connections by default. Therefore, now that our database is setup, we have to allow ourselves to connect to the mssql server over the network.
 
 - Start **SQL Server Configuration Manager**
-- Go to **SQL Server Network Configuration > Protocols for *<instance_name>* > TCP/IP > Properties**
+- Go to **SQL Server Network Configuration > Protocols for *&lt;instance_name&gt;* > TCP/IP > Properties**
 - In **Protocol** tab change **Enable** to **Yes**
 - Go to **IP Address** tab; in **IPAll** (last) section clear **TCP Dynamic Ports** and set **TCP Port** to **1433** (or any other port you want to use)
 - Hit **OK** (2x)
 - Go to **SQL Server Services** under SQL Server Configuration Manager (on the left side)
-- Right click **SQL Server (<instance name>)** and **Restart**
+- Right click **SQL Server (&lt;instance name&gt;)** and **Restart**
 
 Now SQL server is allowed to accept network connections over the port number 1433. However, your machine is not.
 
