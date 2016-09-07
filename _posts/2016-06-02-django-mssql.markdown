@@ -8,7 +8,7 @@ categories: django pymssql mssql sql server microsoft python3.4 python3 python
 ## Backstory
 Everybody has one of those bad days. When you get to work and try to ssh in to your server at home all of a sudden it says
 
-    ssh: connect to host theimpaler.dlinkddns.com port 222: Connection timed out
+    ssh: connect to host yourhost.ddns.com port 22: Connection timed out
 
 You have no idea what's going on and you can't even call home because no one's there. So now you're just stuck at work doing your job, but that tiny piece of mind is busy thinking "what the hell happened to the server".
 
