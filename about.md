@@ -8,7 +8,7 @@ permalink: /about/
 
 Hello. My name is Bekhzod Umarov. I'm an Uzbek CS student with a passion for photography and technology, currently living in New Haven. 
 
-I am currently working on a new Academic Management System for Tutoring/Learning Centers.
+I am currently working on a new Academic Management System for Tutoring/Learning Centers called "S.T.A.T." (Smart Tutoring Analysis Tool).
 
 ## Research
 - [Facial Recognition with Deep Learning](/assets/facial_recognition_paper.pdf){:target="_blank"}
