@@ -1,0 +1,50 @@
+---
+layout: post
+title:  S.T.A.T.
+date:   2016-09-15 00:56:12 -0400
+comments: true
+published: true
+categories: python django first product postgres sql postgresql python3 python3.4
+---
+As some of my friends and people close to me might know, I have been working on a new application (now called S.T.A.T.) for almost a year now. The app's main purpose is to help tutoring centers to organize their data and reports, which is the main reason for it to be called S.T.A.T. - Smart Tutoring Analysis Tool. 
+
+The app is web-based and was built using Django Framework and PostreSQL.
+
+
+### Why make this app?
+
+I work as CS tutor at the CLR (Center for Learning Resources) at University of New Haven. Here, we have to deal with an average of 20,000 student visits per semester (about 250 students per day). With that, we have to analyze how successful our services were for these students. 
+
+At the end of each term, we have to be able to answer questions such as:
+
+ * "Are we helping the students to be successful in their studies?"
+ * "Did our services improve from the last year?" 
+ * "Are all of our tutors being utilized and are they getting paid for the work they've done?" 
+ * and etc. 
+
+To be able to answer these questions, we needed a good tool. A really good tool.
+
+### Why re-invent the wheel?
+
+When I started at CLR as tutor and eventually became a Senior System Administrator, the center had already used multiple tracking/reporting tools specifically built for tutoring centers. At one point, one of the softwares caused data leakage accidentally and sent out the student grades to the whole university population. Thankfully the program's queries weren't exactly correct and the leaked data didn't matche the true data. Therefore, the center had to switch to the last product which also claimed itself to be a "number one product in the market" (not gonna say which product though).
+
+Well, unfortunately for the center, the "number one product" had huge issues with their statistical reports. Which caused the administrators to calculate their statistics wrong. Plus, the client program would crash almost every hour because of losing database connection if tutors hang on one screen for more than 10 minutes, and even bigger issues including the loss of data. 
+
+Being a Computer Science major and having a professional experience of developing products for Ed-Institutions in the past, I had to propose "Why can't we make our own product"? It took the "people-in-the-above" six months to get back to me... 
+and finally, I am done with the product. Well, almost. The product has passed its alpha and beta test stages and is being utilized since the beginning of this Fall semester.
+
+I am actually very grateful that they let me work on this project because it gave me an opportunity to test my skills in a professional environment once more... 
+
+
+
+### What makes S.T.A.T. better than others?
+
+ * First of all, it is web based. 
+ * No hassle of installing client programs on all the machines and the server is easy to setup.
+ * Cross-platform.
+ * I, the developer, was part of the CLR team that got the "Winner of the 2016 ATP Program of Excellence Award". Therefore, the software has all the necessary administrative functionalities implemented.
+ * "It is very user-friendly" (c) CLR staff.
+ * Average training time takes 15 minutes.
+
+
+
