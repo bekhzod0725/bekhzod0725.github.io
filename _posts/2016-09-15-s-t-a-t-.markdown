@@ -46,5 +46,8 @@ I am actually very grateful that they let me work on this project because it gav
  * "It is very user-friendly" (c) CLR staff.
  * Average training time takes 15 minutes.
 
+### What's the future of S.T.A.T.?
+
+I am planning on getting the product out to the market. I do not have the demo of the product yet, there are still some bureaucracy things need to be resolved before that. However, if you are interested in the product, you are more than welcome to contact me.
 
 
