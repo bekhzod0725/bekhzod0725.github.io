@@ -10,7 +10,7 @@ Hello. My name is Bekhzod Umarov. I'm an Uzbek CS student with a passion for pho
 
 I am currently working on a new Academic Management System for Tutoring/Learning Centers called "S.T.A.T." (Smart Tutoring Analysis Tool).
 
-## Research
+## Projects
 - [Facial Recognition with Deep Learning](/assets/facial_recognition_paper.pdf){:target="_blank"}
 - [Bank Password Policies](http://www.unhcfreg.com/#!PasWoRd-eSaMe-Pa-Gaining-access-to-your-bank-account-with-multiple-passwords-impacts-350-million-customers/c5rt/56d5ce580cf2cacdc4211df9){:target="_blank"}
 
