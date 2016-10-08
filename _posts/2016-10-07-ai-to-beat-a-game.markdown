@@ -22,7 +22,7 @@ The code is not generic, it is made to fit my browser's width. However, if you r
 ### Take a look at the result
 <p align="center">
 <a href="https://www.youtube.com/watch?v=okwUIrsJRn8" alt="Telegram Lumberjack AI" target="_blank">
-<img alt="Telegram Lumberjack AI" src="/assets/lumberjack.png" />
+<img alt="Telegram Lumberjack AI" src="/assets/lumberjack.png" width="70%" />
 </a>
 </p>
 
