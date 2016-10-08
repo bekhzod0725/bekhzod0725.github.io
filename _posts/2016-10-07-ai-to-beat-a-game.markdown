@@ -6,7 +6,7 @@ comments: true
 published: true
 categories: artificial intelligence beating lumberjack game python 
 ---
-Have you ever had a moment when you were unintentionally forced into a game competition and you just had to be at the top? Well, this post might help you out how to do get out of that situation and stay at the top.
+Have you ever had a moment when you were unintentionally forced into a game competition and you just had to be at the top? Well, this post might help you out how to  get out of that situation and stay at the top.
 
 
 ## Lumberjack Game
@@ -22,7 +22,7 @@ The code is not generic, it is made to fit my browser's width. However, if you r
 ### Take a look at the result
 <p align="center">
 <a href="https://www.youtube.com/watch?v=okwUIrsJRn8" alt="Telegram Lumberjack AI" target="_blank">
-<img alt="Telegram Lumberjack AI" src="https://img.youtube.com/vi/okwUIrsJRn8/hqdefault.jpg" />
+<img alt="Telegram Lumberjack AI" src="/assets/lumberjack.png" />
 </a>
 </p>
 
