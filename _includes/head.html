@@ -20,10 +20,12 @@
   {% endif %}
   {% if page.description %}
     <meta content="{{ page.description }}" property="og:description">
-  {% elif page.excerpt %}
-    <meta content="{{ page.excerpt | strip_html | strip_newlines | truncate:160 }}">
   {% else %}
+    {% if page.excerpt %}
+    <meta content="{{ page.excerpt | strip_html | strip_newlines | truncate:160 }}">
+    {% else %}
     <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
   {% endif %}
   {% if page.url %}
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
