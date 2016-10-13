@@ -37,7 +37,7 @@ For the program to work, you will need following modules
 ### Backstory 
 
 ###### If you don't want to read it, you can skip to the next section
-So the basic idea behind the AI as a said in my [previous post](http://bekhzod0725.github.io/artificial/intelligence/beating/lumberjack/game/python/2016/10/08/ai-to-beat-a-game.html) is check whether there is a branch above the lumberjack's head or not. I first tried doing it using JavaScript. I wasn't able to get the 2d image from the canvas that the game was using. I also figured that they are Pixi.js for the game. Although we could make our Lumberjack faster than the Flash I just didn't want to waste my time figuring out how to use this library just to accomplish a single thing. So I summoned the mighty snake "Python" for help.
+So the basic idea behind the AI as a said in my [previous post](http://bekhzod0725.github.io/artificial_intelligence/2016/10/08/ai-to-beat-a-game.html) is check whether there is a branch above the lumberjack's head or not. I first tried doing it using JavaScript. I wasn't able to get the 2d image from the canvas that the game was using. I also figured that they are Pixi.js for the game. Although we could make our Lumberjack faster than the Flash I just didn't want to waste my time figuring out how to use this library just to accomplish a single thing. So I summoned the mighty snake "Python" for help.
 
 <p align="center">
 <img src="/assets/not_fast_enough.png" width="50%" />
