@@ -4,7 +4,7 @@ title:  AI to beat a game
 date:   2016-10-07 22:48:15 -0400
 comments: true
 published: true
-categories: artificial intelligence beating lumberjack game python 
+categories: artificial_intelligence
 ---
 Have you ever had a moment when you were unintentionally forced into a game competition and you just had to be at the top? Well, this post might help you out how to  get out of that situation and stay at the top.
 

@@ -5,8 +5,10 @@ date:   2016-10-12 21:33:12 -0400
 comments: true
 published: true
 categories: artificial_intelligence
+image: http://bekhzod0725.github.io/assets/not_fast_enough.png
 ---
 This post explains the Artificial Intelligence behind the bot that scored 560 on Telegram Lumberjack game including the **code** that you guys have been asking for.
+
 
 ## Introduction
 First of all, I apologize for not being able to quickly share the code with you guys. It has been just hectic for these past three days, so I just couldn't even try doing it even if I wanted to. I wasn't even expecting this many requests for the code. I really appreciate it!
