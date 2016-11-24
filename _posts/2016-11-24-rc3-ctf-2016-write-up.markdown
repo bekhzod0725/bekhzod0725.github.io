@@ -1,0 +1,116 @@
+---
+layout: post
+title:  RC3 CTF 2016 Write-up
+date:   2016-11-24 01:06:02 -0500
+comments: true
+published: true
+categories: cybersecurity
+---
+I have recently competed in RC3 2016 CTF hacking challenge as Red Team member for [UNHcFREG](www.unhcfreg.com) team. First of all, BIG thanks to [RIT for hosting this CTF](http://www.rit.edu/gccis/computingsecurity/rc3-capture-flag-competition). This article is going to focus on the challenges that I have solved and how I approached them.
+
+# BorkBork (300)
+First thing I do when I see a messed up website, I look at the source. Looking at the source, we see that the input for the select box is providing direct filenames ("BorkBusters.txt"). So if the POST data is sending filenames, then we are reading whatever is in the file as our output, so the file must be getting read by 'cat' command. 
+
+We run BurpSuite to override headers. Inject our payload as `` `ls *` `` and we get our results:
+
+    ...
+    <iframe width="854" height="480" src="cat: borks/bork.py: No such file or directory
+    cat: borks: Is a directory
+    RC3-2016-L057d0g3
+    -----BEGIN CERTIFICATE-----
+    MIIEUDCCAzigAwIBAgIIWCylqQEnF1EwDQYJKoZIhvcNAQELBQAwgawxKzApBgNV
+    BAMTInJpdCBjb21wZXRpdGl2ZSBjeWJlcnNlY3VyaXR5IGNsdWIxGDAWBgoJkiaJ
+    ...
+
+
+`RC3-2016-L057d0g3` is our flag
+
+
+# DirtyBirdy (400)
+We are given an `.img` file. What do we do? We mount it! What we get is a `home` directory of a victim. Linux has this interesting thing, it keeps all your typed in commands in a file unencrypted so that you can easily go back in your history of typed in commands by simply pressing "UP" key. So what does that tell ya? Of course! Let's look at the history! `cat .history`
+
+    1  mkdir secret files
+    2  mkdir secretfiles
+    3  rm -rf secret files/
+    4  ls
+    5  cd secretfiles/
+    6  gpg --gen-key
+    7  lkjsanfdklsnflkjsldfnlksjflksnklfsdknsaasl;kn;sdlafasnflnsa;lfn;lsanfas;dnfijsad;jnkmkjlknsm;dafijks mjnskfdmcmfd;najmldkfjdasnlvmdflkdasvklnmdsavjbknmdslvjdnjsmalcdvkjdknsfm,lvzcxkjkxlzvndsmd,lsakcvxzjklnm,s.admkcvxzojklnm,sadmlkcvxzjklnvm,smdalkcvjxzklnm,sdmalkcvzxjknm,s adlkcvcjzxknm,sdalkcvxnm,smdslakclvcnm,lkacslcm,lcsklv;mc ,slacxzknmc ,l,cxzkmmc,lcxzmk c,xlczklm ,lxkczlncm ,lcxzk lm zc,alscxzkln'klsdml'kanlnlksdnvla'dlvvalslsalsdlksnadv'sdlkvnsd'lvn'alskdnv'lsdkvns'ldnv'sldkvnsa'ldkvns'ladvnlasdvkna'sdvknasdv'a'sdvlnasdv'adnv'asdv'ksndv'sadv'savd'lsnadv'lskdnv'sdvlnsdv'lksadnv'lsamdv;lsdmv';lsa;dlvms'advm';asdmv';sadv;las'dmvsadv';asdlmvsa'd;vlmasd'vnmas'dv;lmsd'v;lsmadv';sladmv'sa;ldvmas'vd;l'masv';oasekmo;kmsdvav';lasdmv's;alvm'a;sldvm'sa;dlvmsa';ldvms'a;dvlmsd';vlmsa'd;vlsmad'vlksadv';lsamdv';saldmv';lsdavm'sad;vm'as;dlvmasd'v;lmsadv'asd;lmassdkalmvsad'sadmv'asd;vmasdv';saldmvsad';vkmsa'v;msdv';sadv';sadv;lasmvd';asldmvsa';dlvmsad;alssdav';saldvasdv';lsdamv'as;dv's;ladm'v;sdlmdv';lmdav';lmdsa';lsdv';lsdmv';lsdmsdva';lmsadv';ladvm'sdm;l'dsam';dlvsm'sadv;lmsda';msd';lmsv';lmsdv';lmdsvsdv;lmdv';ladsm'dsopwe[wqw
+    8  alkn;lasdnf;lkasnd;flk,m smcm, lpcm ,sdlafk;ndv;kszlakofenjkvzoavdfewn;kavd;ndasfwken vkdmfavknv dakdskofweknv asdfokknv zvasdfkowdvknz cvsadkodvknzvsdakfokdvnzskdakfmkdlv;szsdmakfmldvsm ,zcxmvsadkvnz cxmvsdakofnv zcxvsdakofkdnv zsdakfokndv zcxvmsdakfkndv zvsdmkndv cxzmvsdaknvm zmvsdamkns vdczxmvsdkfknsvczxmvksdmknmv czxmvkslamfm ,vczmxlvsfam CXZMSdwqn. fdsvzcbzxshad m,czxc kojiobjkf wqeml;wpfasdovzxci0 
+    9  LS
+    10  ls
+    11  gpgp
+    12  gpg
+    13  gpg --edit-key
+    14  gpg --edit-key 'ThugG'
+    15  gpg --encrypt Workbook1.xlsx 
+    16  ls
+    17  shred -n 200 -z -u Workbook1.xlsx
+    18  ls
+    19  vim document.txt
+    20  gpg --export-secret-key -a "ThugG" > /home/dtrump/secretfiles/private.key
+    21  echo "# supersecret" >> README.md
+    22  git init
+    23  git add private.key 
+    24  git commit -m "initial commit"
+    25  git config --global user.email "nope@gmail.com"
+    26  git config --global user.name "ThugG"
+    27  git commit -m "initial commit"
+    37  history -c
+
+Wow! Apparently, our ThugG doesn't really know how to use terminal... But let's get back to business. The rest is easy. We have an actual steps of what ThugG did and we just follow it as a reference. The only thing we don't know is where did he push his private.key. To get it we simply do `cat secretfiles/.git/config`
+
+    [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+    [remote "origin"]
+        url = https://github.com/rc3club/supersecret.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+Now that we have everything, our goal is to find the flag and it's apparently is in Workbook1xlsx because ThugG had to encrypt it for some reason. He must be hiding something in it. We have his private key, all is left to do is import his private.key and decrypt the Workbook1.xlsx file. When we decrypt it, we see that the excel file has two sheets. Sheet2 contains the flag - `RC3-2016-SNEAKY21`
+
+
+# Graphic Design (200)
+
+Once I saw the `.obj` file, I knew that it was a 3D file. I used to make 3d models back in time when I used to write 3dGames on my spare time. So, we open it in Blender3d. Delete everything in the scene with `A` and then `X`. Import Wavefront (.obj) file to import our forensics200.obj. We see a huge dinosaur feet covering the whole area, and has got lot of polygons too. (Ah... I miss those times... triangular faces.. lining up vertices.. polygon calculations.. Oh, sorry!) We don't need to see this big bulky ugly feet on our screen!
+<center>
+<img src="/assets/stegosaur_hide.png" width="35%" alt="Hide it!" />
+</center>
+
+Ok, what have we got here... Rotate the screen, and we got our flag!
+<center>
+<img src="/assets/forensics200_flag.png" width="35%" alt="theflag" />
+</center>
+
+
+# Salad (100)
+
+`7sj-ighm-742q3w4t` - is given. This definetely looks like Caesar Cipher. (Of course! It makes sense! Salad - Caesar - Caesar Salad! ha.. funny.)
+
+Ok, it looks like `7sj` is `RC3`, and `ighm` is `2016`. Ok... We have alphanumeric characters. Now we have to figure out two things... where are the numbers and what is the rotation value. 
+We got `RC3-2016-R42q3w4t`. Since `i = 2`, and `7 = R`, numbers should be at the beginning of our key table. Our key table is going to be `0123456789abcdefghijklmnopqrstuvwxyz`. Rest is easy to figure out. You can run a script by changing rotation value for each loop, or you can manually figure it out. Flag is `RC3-2016-ROMANGOD` (I wrote a python script)
+
+# Calculus (200)
+
+Once I solved every given question, I saw the first characters made up something... anti2erv.. hmm.. wrong flag.. anti2erv8? again wrong... Maybe no numbers? Let's see, antiderv.. Crap! Flag is `RC3-2016-ANTIDERV`.
+
+# Breaking News (300)
+
+I started by unzipping everything and combine every single file into one. Spent hours trying to understand what's going on. Nothing! This doesn't make sense. Let's go back and analyze everything one by one. ```for i in `seq 0 19`; cat Chapter$i.zip|less;```... hmm.. nothing..nothing..nothing..no...wait! Chapter4.zip has some extra characters at the end. Looks like base64? Let's see `echo 'UkMk' | base64 --decode` and indeed we get `RC$` back. So the flag is split up. Let's combine them. `RC3-2016-DUKYFBLS`
+
+# My Lil Droid (100)
+
+I left the smaller point ones to the end. Let's see what we have in our .apk first. Let's `unzip` it. Okay... typical android stuff. Let's look for a flag. `grep -n -r -e 'RC3-2016'`. Nothing... Maybe it's split into different parts like the previous challenge? `grep -n -r -e 'RC3'` - nothing... `grep -n -r -e '2016'`
+
+    build-data.properties:7:build.tool=Blaze, release blaze-2016.04.14-4 (mainline @119748905)
+    build-data.properties:13:build.time=Tue May 31 15\:02\:21 2016 (1464732141)
+    build-data.properties:19:UkMz-2016-R09URU0yMQ==
+
+Okay! Another base64! So we know that `UkMz` is RC3, we just have to decrypt the last part. `cat build-data.properties | grep 2016- | sed s/UkMz-2016-// | base64 --decode` and we get `GOTEM21`.
+
+The flag is `RC3-2016-GOTEM21`

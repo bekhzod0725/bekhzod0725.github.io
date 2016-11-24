@@ -12,4 +12,8 @@ permalink: /likes/
 ##  Blogs Worth Reading
 - [RSMS](http://rsms.me){:target="_blank"}
 - [KevinLondon](http://kevinlondon.com){:target="_blank"}
+- [Stefan Behnel - Core Developer of Cython](http://blog.behnel.de){:target="_blank"}
+
+## Worth Visiting
+- [Cython explained (a little old, but still useful)](http://www.behnel.de/cython200910/talk.html){:target="_blank"}
 

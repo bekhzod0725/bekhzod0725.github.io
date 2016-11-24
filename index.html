@@ -24,7 +24,7 @@ layout: default
                           {{ post.date | date: "%b %-d, %Y" }}
                       </span>
                   </h4>
-                  <span class="index-post-excerpt">{{ post.excerpt  }}</span>
+                  <span class="index-post-excerpt">{{ post.excerpt | strip_html}}</span>
               {% endif %}
           </div>
       </a>
