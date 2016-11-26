@@ -19,10 +19,12 @@ layout: default
               </div>
               {% else %}
                   <h4 class="row">
-                      <span class="index-post-title col-md-7" align="left">{{ post.title }}</span>
-                      <span class="post-meta post-date col-md-5" align="right">
+                      <div class="index-post-title col-md-7">{{ post.title }}</div>
+                      <div class="post-meta post-date col-md-5" style="text-align:right">
+                          <div style="display:inline-block;text-align:right">
                           {{ post.date | date: "%b %-d, %Y" }}
-                      </span>
+                        </div>
+                      </div>
                   </h4>
                   <span class="index-post-excerpt">{{ post.excerpt | strip_html}}</span>
               {% endif %}
@@ -30,10 +32,25 @@ layout: default
       </a>
     {% endfor %}
 </div>
-<div class="row" style="margin-top: 20px">
+<div class="row" style="margin-top: 20px;clear:both;">
   <h6 class="rss-subscribe col-xs-4">
       subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
   </h6>
 </div>
 
 </div>
+
+<script>
+$(document).ready(function() {
+   for (var i=2, l = $('.link-box').length; i < l; i++){
+        var prevel = $('.link-box')[i-2];
+        var el     = $('.link-box')[i];
+
+        var loc = $(prevel).height() + $(prevel).position().top;
+        console.log(loc);
+
+        $(el).offset({top: loc + 30});
+
+   }
+});
+</script>
