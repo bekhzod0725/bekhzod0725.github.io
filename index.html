@@ -42,6 +42,7 @@ layout: default
 
 <script>
 $(document).ready(function() {
+ if ($document.width() > 790) {
    for (var i=2, l = $('.link-box').length; i < l; i++){
         var prevel = $('.link-box')[i-2];
         var el     = $('.link-box')[i];
@@ -52,5 +53,6 @@ $(document).ready(function() {
         $(el).offset({top: loc + 30});
 
    }
+ }
 });
 </script>
