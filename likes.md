@@ -5,6 +5,8 @@ permalink: /likes/
 ---
 
 ## Books Worth Noting
+- [The Rootkit Arsenal](https://www.amazon.com/Rootkit-Arsenal-Escape-Evasion-Corners/dp/1598220616){:target="_blank"}
+- [The Hacker Playbook](https://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing/dp/1512214566){:target="_blank"}
 - [Head First Python](http://shop.oreilly.com/product/0636920003434.do){:target="_blank"}
 - [Head First Data Analysis](http://shop.oreilly.com/product/9780596153946.do){:target="_blank"}
 - [Machine Learning with R](https://machinelearningmastery.com/review-of-machine-learning-with-r/){:target="_blank"}
