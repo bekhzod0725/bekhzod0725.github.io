@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="/assets/me.jpg" width="50%" align="right" style="margin-left: 20px"/>
 
-Hello. My name is Bekhzod Umarov. I am a developer and a cyber security professional, also passionate for photography and art. 
+Hello. My name is Bekhzod Umarov. I am a developer and a cyber security professional. Recently finished my 7 week Cyber Security training in both offensive and defensive fields. Passionate for photography and art. 
 
 I have recently developed a new Academic Management System for Tutoring/Learning Centers called "S.T.A.T." (Smart Tutoring Analysis Tool).
 
