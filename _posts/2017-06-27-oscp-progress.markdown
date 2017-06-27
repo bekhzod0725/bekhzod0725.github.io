@@ -20,7 +20,7 @@ During these 16 days I wrote my own enumeration scripts that are lightning fast 
 During these 16 days I also wrote my first MSF module to a certain exploit that doesn't have any coded scripts that script kiddies could use, however when I asked Offensive Security team for a permission to publishing it, they kindly asked not to do so as they consider that part as trophy :D. I understand their position and respect their request. 
 
 <p align="center">
-<img alt="Telegram Lumberjack AI" src="/assets/offsecmsf.png" width="70%" />
+<img alt="Telegram Lumberjack AI" src="/assets/offsecmsf.png" width="100%" />
 </p>
 
 
