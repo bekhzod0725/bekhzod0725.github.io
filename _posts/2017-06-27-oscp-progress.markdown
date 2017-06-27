@@ -27,34 +27,3 @@ I am planning on rooting at least 20 more boxes till the this weekend, because a
 
 I recommend for eveyone who's thinking about going into Cyber Security field or who is in the field but doesn't have the certificate yet to take it. You will love it and you will learn a lot. Even if you fail it, the learning experience you get from it is unforgettable. 
 
-
-
-
-
-
-
-
-
-*This attack is in fact called "Smudge Attack"*
-
-<div align="center">
-<img src="http://www.securitylearn.net/images/smudge-attack.png" width="45%"  />
-<br /><br />
-<span style="font-style:italic">Source: http://www.securitylearn.net/</span>
-</div>
-
-# Your device is INSECURE!
-It doesn't really matter what type of password security you use, be it swipe, number pad, character password... all can be identified within seconds. Of course, each type of password security is stronger than the previous type, but it increases the amount of time to guess your phone password by only few seconds. 
-
-Having your "smudge"s stolen will decrease the amount of possible keys to crack your password. For example, if you were using a number pad based password and your pattern is {1, 3, 9, 0}, then you have only 4 x 3 x 2 x 1 = 24 different possible keys (on 4 digit key). However, your password is possibly one of the following four: "0913","0931","1309","3109" - because it is most probably your birthday, or it may be something else. Point is - you and I are humans, we have habits and they give us away. This makes any security system insecure.
-
-Here is a bit lengthier research paper done on "Smudge Attack" by University of Pennsylvania: [Link](http://static.usenix.org/events/woot10/tech/full_papers/Aviv.pdf)
-
-# "Oh, I use fingerprint"
-Well, I am sorry, but you are even more screwed. Your fingerprint can be hacked with an inkjet printer. Here is a video showing how it's done: [Video](https://www.youtube.com/watch?v=fZJI_BrMZXU), research by Michigan State University.
-
-# How secure are you?
-Answer has always been the same. No matter what system or device you use, the security behind it is meant to protect you from other regular people who are not hackers. However, if you become a real target for somebody, it is not hard for them to hack you.
-
-# Conclusion
-In conclusion, you may be better off by cleaning your screen and wiping your fingerprints off if you really do want true security. These securities are meant for only consumer use. Meaning that they are generic and meant to have better user experience rather than security. So your security essentially is in your hands only and you are the only person who can protect you.
