@@ -21,7 +21,7 @@ During these 16 days I also wrote my first MSF module to a certain exploit that 
 
 Besides writing custom toolsets, I also learned a lot on tons of things that I had never thought existed. The whole experience in OSCP within these 16 days opened my mind in so many areas, that it's taking me about 2 minutes to privesc linux based machines and a little more on windows machines - my weakest part.
 
-I am planning on rooting at least 20 more boxes till the this weekend, because according to my calculations I am far behind the schedule as I only pwned 23 machines in 16 days whereas I should have had 32 (16days * 2 machines per day) in order to be able to pwn all machines within the allocated 30 days of lab time. I think sufference and humble kinda threw me off the schedule too. So now I am trying as hard as possible to catch up with my own schedule and complete all the machines before I hit the day 30. 
+I am planning on rooting at least 20 more boxes till the end of this weekend, because according to my calculations I am far behind the schedule as I only pwned 23 machines in 16 days whereas I should have had 32 (16days * 2 machines per day) in order to be able to pwn all machines within the allocated 30 days of lab time. I think sufference and humble kinda threw me off the schedule too. So now I am trying as hard as possible to catch up with my own schedule and complete all the machines before I hit the day 30. 
 
 # Thoughts
 
