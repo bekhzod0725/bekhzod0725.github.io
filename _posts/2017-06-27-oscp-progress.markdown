@@ -19,11 +19,16 @@ During these 16 days I wrote my own enumeration scripts that are lightning fast 
 
 During these 16 days I also wrote my first MSF module to a certain exploit that doesn't have any coded scripts that script kiddies could use, however when I asked Offensive Security team for a permission to publishing it, they kindly asked not to do so as they consider that part as trophy :D. I understand their position and respect their request. 
 
-Besides writing custom toolsets, I also learned a lot on tons of things that I had never thought existed. The whole experience in OSCP within these 16 days opened my mind in so many areas, that it's taking me about 2 minutes to privesc linux based machines and a little more on windows machines - my weakest part.
+<p align="center">
+<img alt="Telegram Lumberjack AI" src="/assets/offsecmsf.png" width="70%" />
+</p>
+
+
+Besides writing custom toolsets, I also learned a lot on tons of things that I had never thought existed.
 
 I am planning on rooting at least 20 more boxes till the end of this weekend, because according to my calculations I am far behind the schedule as I only pwned 23 machines in 16 days whereas I should have had 32 (16days * 2 machines per day) in order to be able to pwn all machines within the allocated 30 days of lab time. I think sufference and humble kinda threw me off the schedule too. So now I am trying as hard as possible to catch up with my own schedule and complete all the machines before I hit the day 30. 
 
 # Thoughts
 
-I recommend for eveyone who's thinking about going into Cyber Security field or who is in the field but doesn't have the certificate yet to take it. You will love it and you will learn a lot. Even if you fail it, the learning experience you get from it is unforgettable. 
+I recommend taking the course for everyone who's thinking about going into Cyber Security field or whoever is in the field but doesn't have the certificate yet. You will love it and you will learn a lot. Even if you fail it, the learning experience you get from it is unforgettable. 
 
