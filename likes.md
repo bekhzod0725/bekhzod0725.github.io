@@ -19,3 +19,11 @@ permalink: /likes/
 ## Worth Visiting
 - [Cython explained (a little old, but still useful)](http://www.behnel.de/cython200910/talk.html){:target="_blank"}
 
+## Cyber Attack Maps
+- [Kaspersky](https://cybermap.kaspersky.com/){:target="_blank"}
+- [Norse](http://map.norsecorp.com/){:target="_blank"}
+- [Akamai](https://www.akamai.com/us/en/solutions/intelligent-platform/visualizing-akamai/real-time-web-monitor.jsp){:target="_blank"}
+- [ThreatCloud](https://www.checkpoint.com/ThreatPortal/livemap.html){:target="_blank"}
+- [FireEye](https://www.fireeye.com/cyber-map/threat-map.html){:target="_blank"}
+- [DigitalAttack Daily DDoS Map](http://www.digitalattackmap.com/){:target="_blank"}
+- [WordFence Wordpress attacks](https://www.wordfence.com/){:target="_blank"}
