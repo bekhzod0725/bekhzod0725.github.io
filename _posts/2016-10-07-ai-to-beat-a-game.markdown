@@ -17,7 +17,7 @@ So we're trying out all the games. We started with Math Battle and obviously I b
 ### How to beat this game
 The idea is simple. We check for a branch above the lumberjack's head, if it is there - then we switch to the other side, else keep cutting the tree. Branch is just an image mostly consisting of rgb(161, 116, 56).
 
-The code is not generic, it is made to fit my browser's width. However, if you really want to take a look, ~~please feel free to leave a comment and I will share it with more detail~~ [visit my next post](http://bekhzod0725.github.io/artificial_intelligence/2016/10/13/ai-to-beat-a-game-code.html).
+The code is not generic, it is made to fit my browser's width. However, if you really want to take a look, ~~please feel free to leave a comment and I will share it with more detail~~ [visit my next post](http://bekhzod0725.github.io/artificial_intelligence/2016/10/12/ai-to-beat-a-game-code.html).
 
 ### Take a look at the result
 <p align="center">
