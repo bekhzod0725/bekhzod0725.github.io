@@ -6,9 +6,11 @@ permalink: /about/
 
 <img src="/assets/me.jpg" width="50%" align="right" style="margin-left: 20px"/>
 
+<img src="/assets/offsecoscp.png" width="50%" align="right" style="margin-left: 20px; margin-top: 5px;" />
+
 Hello. My name is Bek Umarov. 
 
-I am a developer and a cyber security professional. 
+I am a developer and an OSCP certified cyber security professional. 
 
 Developed a new Academic Management System for Tutoring/Learning Centers called "S.T.A.T." (Smart Tutoring Analysis Tool).
 
