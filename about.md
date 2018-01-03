@@ -10,7 +10,7 @@ permalink: /about/
 
 Hello. My name is Bek Umarov. 
 
-I am a developer and an OSCP certified cyber security professional. 
+I am OSCP certified cyber security professional with a degree in Computer Science. 
 
 Developed a new Academic Management System for Tutoring/Learning Centers called "S.T.A.T." (Smart Tutoring Analysis Tool).
 
