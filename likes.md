@@ -18,7 +18,7 @@ permalink: /likes/
 
 ## Worth Visiting
 - [Cython explained (a little old, but still useful)](http://www.behnel.de/cython200910/talk.html){:target="_blank"}
-- [SecRepo by Mike Sconzo](http://www.secrepo.com/)
+- [SecRepo by Mike Sconzo](http://www.secrepo.com/){:target="_blank"}
 
 ## Cyber Attack Maps
 - [Kaspersky](https://cybermap.kaspersky.com/){:target="_blank"}
