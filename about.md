@@ -19,7 +19,7 @@ Passionate for photography and art.
 ## Publications
 - CVE-2018-7486
   - [http://bekhzod0725.github.io/cybersecurity/2018/02/16/exploiting-muracms.html](http://bekhzod0725.github.io/cybersecurity/2018/02/16/exploiting-muracms.html)
-  - [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486)
+  - [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486){:target="_blank"}
 
 ## Projects
 - [Facial Recognition with Deep Learning](/assets/facial_recognition_paper.pdf){:target="_blank"} - not published
