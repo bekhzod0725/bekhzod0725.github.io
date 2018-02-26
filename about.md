@@ -16,6 +16,11 @@ Developed a new Academic Management System for Tutoring/Learning Centers called 
 
 Passionate for photography and art.
 
+## Publications
+- CVE-2018-7486
+  - [http://bekhzod0725.github.io/cybersecurity/2018/02/16/exploiting-muracms.html](http://bekhzod0725.github.io/cybersecurity/2018/02/16/exploiting-muracms.html)
+  - [http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7486)
+
 ## Projects
 - [Facial Recognition with Deep Learning](/assets/facial_recognition_paper.pdf){:target="_blank"} - not published
 - [Bank Password Policies](http://www.unhcfreg.com/#!PasWoRd-eSaMe-Pa-Gaining-access-to-your-bank-account-with-multiple-passwords-impacts-350-million-customers/c5rt/56d5ce580cf2cacdc4211df9){:target="_blank"} - published in [SecurityMagazine](https://www.securitymagazine.com/articles/86965-research-finds-bank-password-policies-often-weak){:target="_blank"}
