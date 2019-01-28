@@ -12,10 +12,10 @@ permalink: /likes/
 - [Machine Learning with R](https://machinelearningmastery.com/review-of-machine-learning-with-r/){:target="_blank"}
 
 ##  Blogs Worth Reading
-- [The Sandbox](616c.gitlab.io){:target="_blank"} - Occasional Thoughs and Experiments of my dear friend
-- [RobMLee SANS ICS](http://www.robertmlee.org/blog/)
-- [Learning by Practicing](https://www.securitynik.com){:target="_blank"} - Nik Alleyne SANS
-- [RSMS](http://rsms.me){:target="_blank"}
+- [The Sandbox](https://616c.gitlab.io){:target="_blank"} - Occasional Thoughs and Experiments of my dear friend
+- [Rob M Lee](https://www.robertmlee.org/blog/){:target="_blank"} -  SANS ICS Instructor
+- [Nik Alleyne - Learning by Practicing](https://www.securitynik.com){:target="_blank"} - SANS Instructor
+- [RSMS](https://rsms.me){:target="_blank"}
 - [KevinLondon](http://kevinlondon.com){:target="_blank"}
 - [Stefan Behnel - Core Developer of Cython](http://blog.behnel.de){:target="_blank"}
 
