@@ -13,6 +13,8 @@ permalink: /likes/
 
 ##  Blogs Worth Reading
 - [The Sandbox](616c.gitlab.io){:target="_blank"} - Occasional Thoughs and Experiments of my dear friend
+- [RobMLee SANS ICS](http://www.robertmlee.org/blog/)
+- [Learning by Practicing](https://www.securitynik.com){:target="_blank"} - Nik Alleyne SANS
 - [RSMS](http://rsms.me){:target="_blank"}
 - [KevinLondon](http://kevinlondon.com){:target="_blank"}
 - [Stefan Behnel - Core Developer of Cython](http://blog.behnel.de){:target="_blank"}
